@@ -1,0 +1,237 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .header-top {
+    display: none;
+    background: #404040;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .support-link {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 50px;
+  }
+
+  .nav {
+    display: flex;
+    background: linear-gradient(90deg, #FFE418 -7.4%, #FFE418 -7.4%, #FFE418 -7.4%, #282828 5.4%, #005440 46.47%, #282828 94.59%, #FFE418 109.97%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+   /* navbar for mobile view */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-nav-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 120px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .brand {
+    color: #fff;
+  }
+
+  .highlight {
+    color: #24ff24;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    text-decoration: none;
+    color: #24ff24;
+    border-bottom: 2px solid #24ff24;
+    padding-bottom: 22px;
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right:40px ;
+  }
+
+  .login-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+
+  .signup-btn {
+    padding: 5px 10px;
+    border: 1px solid #24ff24;
+    color: #24ff24;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .signup-btn:hover {
+    background-color: #24ff24;
+    color: #333333;
+  }
+
+  /* Hamburger Icon */
+  .hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+
+  /*.icon-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-link span {
+    margin-top: 5px;
+  } */
+
+  /* Sidebar Navigation for Mobile */
+  .navbar-open {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #005440;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .auth-buttons-open {
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+  }
+  .navbar-open ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .navbar-open li {
+    padding: 10px 0;
+  }
+
+  .separator-line {
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+  }
+
+  .support-open {
+    padding: 10px 0;
+    margin-left: 20px;
+  }
+
+.nav-links-open {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-open a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links-open a:hover,
+  .nav-links-open a.active {
+    text-decoration: none;
+    color: #24ff24;
+    border-bottom: 2px solid #24ff24;
+    padding-bottom: 2px;
+  }
+
+  /* Desktop View */
+  @media (min-width: 768px) {
+    .header-top {
+      display: block;
+      text-align: right;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .header-top {
+      display: none;
+    }
+
+    /* Hide UEFA icons when menu is open */
+    .hidden {
+      display: none;
+     }
+
+    .nav {
+        display: flex;
+        background:#005440;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .auth-buttons {
+        display: none;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+  }
